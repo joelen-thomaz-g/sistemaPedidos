@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/global.css" />
+  <title>Sistema de Pedidos</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Sistema de Pedidos</h1>
+    <div class="form-container">
+      <form action="">
+        <fieldset>
+          <legend>Informe os dados do Pedido</legend>
+          <div class="form-group">
+            <label for="product-name">Produto</label>
+            <input type="text" name="product-name" id="product-name" placeholder="Digite o nome do produto" />
+          </div>
+          <div class="form-group">
+            <label for="product-quantity">Quantidade</label>
+            <input type="number" name="product-quantity" id="product-quantity" />
+          </div>
+          <div class="form-group">
+            <label for="product-price">Preço</label>
+            <input type="text" name="product-price" id="product-price" />
+          </div>
+        </fieldset>
+        <div class="form-buttons">
+          <button id="send" class="send-button">Enviar pedido</button>
+          <button id="list" class="list-button">Listar pedido</button>
+          <button id="close" class="close-button">Fechar pedido</button>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
